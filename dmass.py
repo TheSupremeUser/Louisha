@@ -46,4 +46,4 @@ async def send(ctx, *, content: str):
                
 
 
-client.run("NjMxMzE2NzY5MTIyMDI1NTAy.XZ1FtA.uFK-L4q7YLUU_RBY6ihDM4B5r0s")                
+client.run("NjMxNzQzMjA1Mzg5MzY5MzU0.XZ7TJA.FvRYqhNVQGJ8FUMY5rA56xTeJw0")                
