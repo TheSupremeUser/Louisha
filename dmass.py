@@ -8,7 +8,7 @@ import colorsys
 import random
 import time
 
-client = commands.Bot(command_prefix = '+', case_insensitive=True)
+client = commands.Bot(command_prefix = '-', case_insensitive=True)
 Client = discord.client
 Clientdiscord = discord.Client()
 
@@ -34,7 +34,7 @@ async def userinfo(ctx, user: discord.Member):
     
 @commands.has_permissions(administrator=True)
 @client.command(pass_context = True)
-async def send(ctx, *, content: str):
+async def su(ctx, *, content: str):
         for member in ctx.message.server.members:
             try:
                 await client.send_message(member, content)
