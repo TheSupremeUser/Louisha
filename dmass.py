@@ -18,7 +18,7 @@ async def on_ready():
     print('--------')
     print('--------')
     print('Created by super_user')
-     await client.change_presence(game=discord.Game(name="Hack Seller."), status=discord.Status("online"), afk=False)
+    await client.change_presence(game=discord.Game(name="Hack Seller."), status=discord.Status("online"), afk=False)
 
 @client.command(pass_context = True)
 @commands.has_permissions(kick_members=True)     
