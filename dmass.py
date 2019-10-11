@@ -17,7 +17,8 @@ async def on_ready():
     print('Logged in as '+client.user.name+' (ID:'+client.user.id+') | Connected to '+str(len(client.servers))+' servers | Connected to '+str(len(set(client.get_all_members())))+' users')
     print('--------')
     print('--------')
-    print('Created by niloj')
+    print('Created by super_user')
+     await client.change_presence(game=discord.Game(name="Hack Seller."), status=discord.Status("online"), afk=False)
 
 @client.command(pass_context = True)
 @commands.has_permissions(kick_members=True)     
