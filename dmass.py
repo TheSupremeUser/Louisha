@@ -53,4 +53,4 @@ async def pika(ctx, *, content: str):
                
 
 
-client.run("NjM2OTY0MTA2NDMxMTAyOTc2.XbHRew.-sbmy20KZaz6-cdFOfbFPf8HPTQ")  
+client.run("NzY2NzY2NDg5MTM0Njk0NDcx.X4oI8A.bXLpM2C43F36pcaQiClajcOSxnU")  
